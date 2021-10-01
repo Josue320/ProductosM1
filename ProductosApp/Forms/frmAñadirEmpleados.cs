@@ -61,7 +61,8 @@ namespace ProductosApp.Forms
                         Apellidos = txtApellidos.Text,
                         Cedula = txtCedula.Text,
                         FechaContratacion = dtpFechaContratacion.Value,
-                        Salario = nudSalario.Value
+                        Salario = nudSalario.Value,
+                        Id = empleadoM.GetLastEmpleadoId()+1
                     };
                     empleadoM.Create(a);
                     break;
